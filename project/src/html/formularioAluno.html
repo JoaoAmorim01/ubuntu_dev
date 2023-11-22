@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css" media="screen">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="shortcut icon" href="../img/Logo ALT UBUNTU CIRCULO.png" type="image/x-icon">
+    <title>Formulário de inscrição</title>
+    <script src="../js/script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('YRDzOmDDk6ZJ_dMzE');
+        })();
+    </script>
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="../../index.html"><img id="logoCirculo" src="../img/Logo UBUNTU CIRCULO.png"></a>
+        <li><a href="../../index.html">Formação</a></li>
+        <li><a href="#">Quem somos?</a></li>
+        <li><a href="#">Apoie o projeto</a></li>
+    </nav>
+    <section>
+        <h1 class="titulo">Formulário de inscrição</h1>
+        <p class="parag">Queremos te conhecer melhor!</p>
+        <form>
+            <fieldset class="linha1">
+                <div class="conj">
+                    <label for="nomeSocial" class="lab1">Seu nome:</label>
+                    <input type="text" id="nomeSocial" placeholder="Também aceitamos seu nome social" class="btn1"
+                        required>
+                </div>
+                <div class="conj1" id="conjData">
+                    <label for="nascimento" class="lab1">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento" placeholder="Ex.: 20/10/2000" class="btn2"
+                        required>
+                </div>
+            </fieldset>
+            <fieldset class="linha2">
+                <div class="conj2">
+                    <label for="genero" class="lab1">Seu gênero:</label>
+                    <select id="genero" class="btn3">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="MASCULINO">MASCULINO</option>
+                        <option value="FEMININO">FEMININO</option>
+                        <option value="TRANS">TRANS</option>
+                        <option value="OUTRO">OUTRO</option>
+                        <option value="PREFIRO NÃO DECLARAR">PREFIRO NÃO DECLARAR</option>
+                    </select>
+                </div>
+                <div class="conj2">
+                    <label for="cpf" class="lab1">CPF:</label>
+                    <input type="text" class="btn3" name="cpf" id="cpf">
+                </div>
+                <div class="conj2">
+                    <label for="cep" class="lab1">CEP:</label>
+                    <input type="text" class="btn3" name="cep" id="cep">
+                </div>
+            </fieldset>
+
+            <section class="sectionEndereco">
+                <div id="divUF" class="conj3">
+                    <label for="btnUF" class="lab1">UF:</label>
+                    <select class="btn1" id="btnUF">
+                        <option value="AM">
+                        <option value="BA">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+
+                    </select>
+                </div>
+                <div id="cidade" class="conj3">
+                    <label for="cidade" class="lab1">CIDADE:</label>
+                    <input type="text" class="btn1" id="btnCidade" name="cidade" placeholder="Ex.: SÃO PAULO">
+                </div>
+                <div class="conj3">
+                    <label for="bairro" class="lab1">BAIRRO:</label>
+                    <input type="text" name="bairro" id="bairro" class="btn1" placeholder="Ex.: Serra">
+                </div>
+            </section>
+            <section class="sectionEndereco">
+                <div class="conj3">
+                    <label for="endereco" class="lab1">ENDEREÇO:</label>
+                    <input type="text" class="btn1" name="endereco" id="endereco" placeholder="EX.: RUA DOS BORGES">
+                </div>
+                <div class="conj3" id="conjNum">
+                    <label for="numeroEndereco" class="lab1">NÚMERO:</label>
+                    <input type="number" class="btn1" id="numeroEndereco" placeholder="10000">
+                </div>
+                <div class="conj3">
+                    <label for="complemento" class="lab1">COMPLEMENTO:</label>
+                    <input type="text" class="btn1" name="complemento" id="complemento" placeholder="EX.: BL 1 AP. 101">
+                </div>
+            </section>
+
+            <section class="sectionEndereco">
+                <div class="conj3">
+                    <label for="tel" class="lab1">NÚMERO DO WHATSAPP:</label>
+                    <input type="tel" id="tel" name="tel" class="btn1" required placeholder="(DD) 9 XXXX-XXXX">
+                </div>
+                <div class="conj3">
+                    <label for="email" class="lab1">Seu melhor email:</label>
+                    <input type="email" name="email" id="email" class="btn1" placeholder="ubuntudev@gmail.com" required>
+                </div>
+            </section>
+            <fieldset class="linha5" id="linha5">
+                <div class="conj3">
+                    <label for="raca" class="lab1">VOCÊ SE AUTODECLARA UMA PESSOA:</label>
+                    <select id="raca" class="btn1" placeholder="SEGUNDO O IBGE...">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="PRETA">PRETA</option>
+                        <option value="PARDA">PARDA</option>
+                        <option value="INDIGENA">INDÍGENA</option>
+                        <option value="BRANCA">BRANCA</option>
+                        <option value="AMARELA">AMARELA</option>
+                    </select>
+                </div>
+                <div class="conj3">
+                    <label for="FORMACAO" class="lab1">FORMAÇÃO:</label>
+                    <select id="FORMACAO" class="btn1">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="ENSINO MÉDIO CURSANDO">ENSINO MÉDIO CURSANDO</option>
+                        <option value="ENSINO MÉDIO CONCLUÍDO">ENSINO MÉDIO CONCLUÍDO</option>
+                        <option value="ENSINO TÉCNICO CURSANDO">ENSINO TÉCNICO CURSANDO</option>
+                        <option value="ENSINO TÉCNICO CONCLUÍDO">ENSINO TÉCNICO CONCLUÍDO</option>
+                        <option value="ENSINO SUPERIOR CURSANDO">ENSINO SUPERIOR CURSANDO</option>
+                        <option value="ENSINO SUPERIOR CONCLUÍDO">ENSINO SUPERIOR CONCLUÍDO</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="check">
+                <label for="check"><strong>ÁREAS DE FORMAÇÃO QUE VOCÊ TEM INTERESSE:</strong></label>
+                <div class="bigCheck">
+                    <div class="checkDiv">
+                        <input type="checkbox" name="tecnologia1" id="tecnologia1" value="front-end" class="tecnologia">
+                        <label for="tecnologia1">Front-End</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="back-end" class="tecnologia">
+                        <label for="tecnologia2">Back-end</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="UXUI" class="tecnologia">
+                        <label for="tecnologia3">UX/UI</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Soft" class="tecnologia">
+                        <label for="tecnologia4">Soft Skills</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Fullstack" class="tecnologia">
+                        <label for="tecnologia5">Fullstack</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Javascript" class="tecnologia">
+                        <label for="tecnologia6">Javascript</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia7" name="tecnologia7" value="DevOps" class="tecnologia">
+                        <label for="tecnologia7">Dev ops</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Inglês" class="tecnologia">
+                        <label for="tecnologia8">Inglês</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia9" name="tecnologia9" value="Agile" class="tecnologia">
+                        <label for="tecnologia9">Agile</label>
+                    </div>
+                    <div class="checkDiv">
+                        <input type="checkbox" id="tecnologia10" name="tecnologia10" value="Python" class="tecnologia">
+                        <label for="tecnologia10">Python</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="divAcordo">
+                <input type="checkbox" name="acordo" id="acordo" required>
+                <label for="acordo" id="lbAcordo">Você concorda que os dados sobre você serão <br>processados sob a lei de proteção de dados</label>
+            </fieldset>
+            <input onclick="sendMail()" type="submit" value="Enviar!" id="envio">
+        </form>
+    </section>
+    <div class="faq">
+        <p>Perguntas frequentes:</p>
+        <details>
+            <summary class="perguntaFaq" id="faq0">Como é o curso e os requisitos?</summary>
+            <section class="secFaq"><p>O nosso curso é totalmente online, os alunos acessam o conteúdo na nossa plataforma. Os requisitos para participar do processo seletivo para a nova turma do curso é ter entre 16 e 20 anos, muita vontade de aprender tecnologia.</p></section>
+        </details>
+        <details>
+            <summary class="perguntaFaq" id="faq1">O que é front-end?</summary>
+            <section class="secFaq"><p>Front-end é a parte de um site ou aplicativo que os usuários interagem diretamente. É a interface com a qual os usuários interagem visualmente e funcionalmente. Envolve a criação e a implementação dos elementos visíveis de um site ou aplicativo, como a disposição, o design, os botões, os formulários, as animações e o conteúdo. Em outras palavras, o front-end se concentra em como as coisas parecem e funcionam para os usuários finais. Tecnologias como HTML, CSS e JavaScript são comumente usadas para desenvolver a parte de front-end de um site ou aplicativo.</p></section>
+        </details>
+        <details>
+            <summary class="perguntaFaq" id="faq2">O que é back-end?</summary>
+            <section class="secFaq"><p>Back-end é a parte de um site ou aplicativo que os usuários não veem diretamente, mas que desempenha um papel fundamental em fazer as coisas funcionarem nos bastidores. Envolve a programação e a lógica que permitem que um site ou aplicativo armazene dados, gerencie usuários, processe formulários e execute operações complexas. O back-end lida com o processamento de dados, a interação com bancos de dados, a autenticação de usuários e outras funcionalidades que não são visíveis para os usuários finais. Tecnologias como linguagens de programação (como Python, Java, PHP, Ruby), servidores, bancos de dados e frameworks são comumente usadas para desenvolver a parte de back-end de um sistema</p></section>
+        </details>
+        <details>
+            <summary class="perguntaFaq" id="faq3">O que é UX/UI?</summary>
+            <section class="secFaq"><p>Em resumo, UX se concentra na experiência geral e nas emoções dos usuários durante a interação, enquanto UI se concentra no design visual e na disposição dos elementos que os usuários veem e com os quais interagem. Ambos são essenciais para criar produtos digitais que sejam agradáveis, funcionais e eficazes para os usuários.</p></section>
+        </details>
+        <details>
+            <summary class="perguntaFaq" id="faq4">Por que o inglês é tão importante?</summary>
+            <section class="secFaq"><p>Ter habilidades em inglês não é apenas benéfico para programadores, mas é quase uma necessidade no mundo da programação, dada a natureza global e colaborativa da indústria de tecnologia. Isso não significa que você precisa ser fluente, mas ter um nível razoável de compreensão e comunicação em inglês é altamente recomendado para ser um desenvolvedor eficaz e bem-sucedido. Já que para se acessar documentação técnica, aprender novas tecnologias, acessar conhecimento e dialogar com outros programadores é necessário saber minimamente inglês.</p></section>
+        </details>
+    </div>
+
+</body>
+
+</html>
